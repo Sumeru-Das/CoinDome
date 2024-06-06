@@ -1,0 +1,101 @@
+.main-flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.heading1,
+.heading2 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.heading2 {
+  color: var(--blue);
+}
+
+.info-text {
+  color: var(--grey);
+  font-weight: 300;
+}
+
+.btn-flex {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  .heading1,
+  .heading2 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .heading1,
+  .heading2 {
+    font-size: 4rem;
+  }
+
+  .gradient {
+    right: 0px;
+    top: 60px;
+    width: 200px;
+  }
+  .iphone {
+    right: 0px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .heading1,
+  .heading2 {
+    font-size: 3rem;
+  }
+  .main-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+
+  }
+  .heading1,
+  .heading2,
+  .info-text {
+    text-align: center;
+  }
+
+  .info-text {
+    font-size: 0.8rem;
+  }
+
+  .btn-flex {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .gradient-div {
+    margin-top: 3rem;
+    margin-right: auto;
+  }
+}
+
+
+/* 
+clamp(minFontSize, ratio, maxFontSize)
+  formula to calculate the ratio
+  (max-size/design width) * 100
+  example: (70/1440)*100 */
